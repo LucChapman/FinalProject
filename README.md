@@ -1,4 +1,4 @@
-Project Name: ProjectFinal
+Project Name: Game Project
 Tean Name: None
 Team Members: Luc Chapman
 
