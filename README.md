@@ -1,5 +1,5 @@
 Project Name: Game Project
-Tean Name: None
+Tean Name: Game
 Team Members: Luc Chapman
 
 Project Description: This is a solo project for CSI-2300 where I plan to build a Java based 2D video game. this video game will contian a GUI of course, it will also contian scripts for the player, their
