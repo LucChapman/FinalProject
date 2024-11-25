@@ -8,3 +8,11 @@ movement, as well as scripts to complete the simple puzzle interactions that wil
 Estimate of Effort: This game should be completable in the 3-4 weeks I have to develope it, I will begin first by creating a basic script to move from a start menu to the game and then to a final ending screen. I will then create a player character with movement and animations, then move onto creating the game and basic puzzles to complete. Finally I will create an enemy ai and sprite to chase the player and possibly cause a game over screen on contact.
 
 Included in the directory is a .png image of the classes I need when scripting.
+
+After Project,
+After completing the project I remade the UML diagram, it should be called FinalProjectAfter.png in this repository.
+I encountered some issued when programming the game, It should be played windowed and not fullscreened because the background textures resize themselves the wrong way and I could not figure out how to fix it.
+I also had some issues commiting all of the files to githib, in this main branch is the jar file and other requirements for this assignment. There is a second branch called the master branch whihc keeps the
+entire folder for the project inside and everything that came with it.
+
+I hope this helps and I hope you enjoy!
