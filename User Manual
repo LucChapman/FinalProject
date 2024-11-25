@@ -1,8 +1,10 @@
 User Manual
 
+Note: due to some issues with background texture resizing, the game should be played in the window it is launched in and NOT IN FULLSCREEN.
+
 Use "W", "A", "S", "D" Keys to move the player character around.
 Use "F" to interact with some object or doorways.
 
 Avoid the enemy sprites on certain levels.
 
-The goal for the playe ris to flip all of the lever in each room to open the door to the next room while avoiding the enemies.
+The goal for the player is to flip all of the lever in each room to open the door to the next room while avoiding the enemies.
