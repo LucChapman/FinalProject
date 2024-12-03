@@ -1,0 +1,74 @@
+Implementation Manual
+
+This game is designed for the user just to have some fun. The game is 2D with assetes designed using Aseprite (https://www.aseprite.org/). The game was also developed in Intelij using LibGDX (https://libgdx.com/) a
+library of commands and methods tailored for game development.
+
+The game uses 6 general classes, three of which are copied and modified to be used separately in different scenarios.
+
+Main Class:
+The first class which is used to initate the game. The class is used mostly as a super class to create different scenes and display them properly.
+
+Create() //Instantiates the current scene.
+Render() //Displays the scene and its object to the screen.
+Dispose() //Destroys the scene and its object when done with it.
+
+Menu Classes:
+These set of classes encompass the main menu class and the lose and win classes. The ladder two were developed using the menu class but modified to be more simple.
+
++Texture //Holds a .png file to eventualy visualize the background image.
++Sprite //Takes texture and readies it to be drawn and operated with.
++Int ButtonSizes //Only useful for the true Menu class, declares position and size of buttons for play and exit.
+
+Show() //Properly chooses the desired texture and sets it to a sprite.
+Render() //Displays the current menu screen.
+Dispose() //Destoy menue screen when finished.
+
+Screen Classes:
+The screen classes are used for the main areas of the game. There are three of them which hold the player, enemies, and object so that the game may progress.
+
++Player //Creates a player object.
++Walls //Creates invisible walls to prevent player from leaving screen.
++Objects //Creates any objects used in the scene.
++Texture
++Sprite
+
+Show() //Establishes the objects and where they should be placed. Also links the textures to the sprites.
+Render() //Visualizes everything to screen, including background and objects.
+Collisions() //Encloses the player in the screen by establishing walls the player cannot pass.
+Resize() //Resizes the walls the player cannot cross. M<ade it easy to work with them here rather than earlier in teh code.
+
+Player Class
+The player class controls the object known as the "Player" which is how the user may interact with the game. The user manual is found elsewhere in this repository.
+
++Texture[] //An array of .pngs used for creating animations when assigning the textures to the sprite.
++Sprite
++Vector2 //The X and Y position for the player, used for movement and direction.
++Int Speed //Speed of player.
++Hitbox //The circle which surrounds the player so that the walls of the screens can interact or "hit" the player. Also used for allowing the enemy to interact with the player.
+
+Update() //Called every frame of the game, used to update movement and direction as well as the animations of the player.
+Draw() //Visualizes the player when on screen.
+GetPosition() //Gets the position of the player to be used by some areas within the screens.
+
+Object Classes:
+
++Texture
++Sprite
++Boolean isActivated //Used to determine whether or not the object is on or off.
+
+Toggle() //Used for toggling some object on or off, such as levers and updating their texture and functionality accordingly.
+Draw() //Draws the objects to the screen.
+
+Enemy Class:
+
++Sprite
++Texture[]
++Hitbox
++Int Speed
++float StateTime //Used for updating time passage and aids in movement towards player.
++Boolean isChasing //Determines if the enemy is chasing the player and whether or not to update its movement or animations.
+
+Update() //Updates every frame to keep the enemy persuing the player and animating.
+CollisionCheck() //Checks if the enemy has collided with the player to cause a game over screen.
+Draw()
+ResizeHitbox() //Used to resize the hitbox of the enemy to balance it when interacting with the player.
