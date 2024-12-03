@@ -8,3 +8,5 @@ Use "F" to interact with some object or doorways.
 Avoid the enemy sprites on certain levels.
 
 The goal for the player is to flip all of the lever in each room to open the door to the next room while avoiding the enemies.
+
+The below .png files are visuals for what is described here in the manual. The images are of the character moving, the doors the character must enter and the levers to open them, and the enemy ai that the player must avoid.
